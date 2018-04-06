@@ -81,24 +81,24 @@ nav a{
 
 }
 /* -------------------------- gallery --------------------------*/
-
-.first-row .row img {
-   max-width: 280px;
-    padding:3%;
+/* czym sie zawijać czy nie cały flex container*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
 
 }
-.second-row .row img {
-    max-width: 280px;
-    padding:3%;
-}
-.third-row .row img {
-    max-width: 280px;
-    padding:3%;
-}
 
-/* testy podświetlania zaznaczonego elementu*/
 
-.first-row .row img:hover {
-    box-shadow: 2px 4px darkred;
+/* zbliżenie podświetlonego elementu*/
+
+.flex-container img:hover {
+    box-shadow: 2px 4px grey;
     transform: scale(1.1);
+}
+
+/* 16:9*/
+.flex-container img {
+    width: 336px;
+  height: 189px;
+
 }
